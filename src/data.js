@@ -10,12 +10,12 @@ const users = JSON.parse(userData);
 const writeJSON = () => {
     let accountsJSON = JSON.stringify(accounts);
     fs.writeFileSync(path.join(__dirname, 'json/accounts.json'), accountsJSON, 'UTF8');
-}
+};
 
 module.exports = {
     accounts,
     users,
     writeJSON
-}
+};
 
 
